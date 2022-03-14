@@ -4,7 +4,6 @@ import axios from "axios";
 import "./Login.css";
 
 function Login() {
-
   const consumir_login = () => {
     var postData = {
       username: document.getElementById("username").value,
@@ -18,7 +17,7 @@ function Login() {
       .then((response) => {
         localStorage.setItem("token", response.data["token"]);
         localStorage.setItem("id_user", response.data["user_id"]);
-        window.location = "/profile"
+        window.location = "/profile";
       })
       .catch((error) => {
         console.log(error.response.data);

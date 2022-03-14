@@ -22,10 +22,10 @@ function App() {
       })
       .then((response) => {
         alert("Usuario creado exitosamente");
-        navigate('/login');
+        navigate("/login");
       })
       .catch((error) => {
-        console.log(error.response.data)
+        console.log(error.response.data);
         alert("No se pudo crear el usuario");
       });
   };
