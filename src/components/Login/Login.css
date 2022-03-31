@@ -84,14 +84,11 @@ body {
 }
 
 .Login-right {
-  width: var(--card-width);
   height: calc(146% - 40px);
-  color: #f1f1f2;
   width: 45%;
   background: linear-gradient(-30deg, #303030, #202020, #101010, #000000);
   position: relative;
   border-radius: 8px;
-  color: rgb(88 199 250 / 0%);
   display: flex;
   justify-content: center;
   align-items: center;

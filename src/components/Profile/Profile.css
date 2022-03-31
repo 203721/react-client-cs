@@ -98,7 +98,7 @@ body {
 
 .Profile-image img {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .Profile-image-options {
@@ -113,20 +113,17 @@ input[type="file"] {
 }
 
 #Profile-image-submit1 {
+  margin: 10px 0px;
+  padding: 12px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
   background-image: linear-gradient(
     to right,
     #000000 0%,
     #232526 51%,
     #000000 100%
   );
-}
-
-#Profile-image-submit1 {
-  margin: 10px 0px;
-  padding: 12px 12px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
   background-size: 200% auto;
   color: rgb(180, 180, 180);
   box-shadow: 0 0 20px rgb(0, 0, 0);
@@ -143,20 +140,17 @@ input[type="file"] {
 }
 
 #Profile-image-submit2 {
+  margin: 10px 0px;
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
   background-image: linear-gradient(
     to right,
     #232526 0%,
     #414345 51%,
     #232526 100%
   );
-}
-
-#Profile-image-submit2 {
-  margin: 10px 0px;
-  padding: 12px 10px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
   background-size: 200% auto;
   color: rgb(180, 180, 180);
   box-shadow: 0 0 20px rgb(0, 0, 0);
@@ -174,14 +168,11 @@ input[type="file"] {
 }
 
 .Profile-right {
-  width: var(--card-width);
   height: calc(146% - 40px);
-  color: #f1f1f2;
   width: 45%;
   background: linear-gradient(-30deg, #303030, #202020, #101010, #000000);
   position: relative;
   border-radius: 8px;
-  color: rgb(88 199 250 / 0%);
   display: flex;
   justify-content: center;
   align-items: center;

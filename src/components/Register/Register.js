@@ -3,7 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import "./Register.css";
 
-function App() {
+function Register() {
   let navigate = useNavigate();
 
   const consumir_register = () => {
@@ -104,4 +104,4 @@ function App() {
   );
 }
 
-export default App;
+export default Register;

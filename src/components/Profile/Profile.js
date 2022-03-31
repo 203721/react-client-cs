@@ -13,8 +13,9 @@ function Profile() {
 
   const upload_img = () => {
     let postData = new FormData();
+    let fileImage = document.getElementById("file").files[0];
     postData.append("id_user", user);
-    postData.append("url_img", document.getElementById("file").files[0]);
+    postData.append("url_img", fileImage);
 
     axios
       .post("http://localhost:8000/api/v1/profile/list", postData, {
@@ -24,12 +25,20 @@ function Profile() {
         },
       })
       .then((response) => {
-        profile_img = "http://localhost:8000" + response.data.url_img;
-        document.getElementById("img").src = profile_img;
-        window.location.reload();
+        if (fileImage != null) {
+          if (response.data === "put_img") {
+            put_img();
+          } else {
+            profile_img = "http://localhost:8000" + response.data.url_img;
+            document.getElementById("img").src = profile_img;
+            window.location.reload();
+          }
+        } else {
+          delete_img();
+        }
       })
       .catch((error) => {
-        put_img();
+        console.log(error.response.data);
       });
   };
 
